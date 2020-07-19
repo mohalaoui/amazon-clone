@@ -29,9 +29,7 @@ function Product({ id, title, price, rating, image }) {
           {Array(rating)
             .fill()
             .map((_) => (
-              <p>
-                <StarRateSharpIcon />
-              </p>
+              <p>⭐</p>
             ))}
         </div>
         <p className="product__price">

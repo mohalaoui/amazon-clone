@@ -12,8 +12,8 @@ function Cart() {
     <div className="cart">
       <div className="cart__left">
         {cart?.length === 0 ? (
-          <div>
-            <h2 className="cart__title">Votre panier est vide!</h2>
+          <div className="cart__empty">
+            <h2>Votre panier est vide!</h2>
             <p>
               Vous n'avez pas de produit dans votre panier. Vous pourriez
               ajouter des articles dans la page d'acceuil.

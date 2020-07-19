@@ -15,9 +15,10 @@ function SubTotal() {
         votre commande
       </p>
       <p className="subTotal__label">
-        Sous-total ({cart.length} articles):
-        {console.log(getCartTotal(cart))}
+        Sous-total ({cart.length} articles):&nbsp;
         <CurrencyFormat
+          className="subTotal__price"
+          decimalScale={2}
           value={getCartTotal(cart)}
           displayType={"text"}
           thousandSeparator={true}

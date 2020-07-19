@@ -5,6 +5,7 @@
   border-radius: 0 0 4px 4px;
   background-color: white;
   margin-left: 15px;
+  margin-right: 15px;
   margin-top: 40px;
   border: 1px #ddd solid;
 }
@@ -28,6 +29,12 @@
 
 .subtotal__gift > input {
   margin-right: 5px;
+}
+
+.subTotal__price {
+  color: #b12704;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .subTotal > Button {
