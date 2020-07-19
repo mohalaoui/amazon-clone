@@ -1,0 +1,38 @@
+.product {
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+    min-width: 100px;
+    width: 100%;
+}
+
+.product__info{
+    padding: 20px;
+    height: 100%;
+}
+
+.product__star {
+    display: flex;
+    color:#CD5E04;
+}
+
+.product__image {
+    object-fit: contain;
+    max-height: 200px;
+    width: 100%;
+}
+
+.product__price {
+    color: #CD5E04;
+}
+
+.product > Button {
+    background-color: #F2CA66 !important;
+    border: solid 1px;
+    font-size: 12px;
+    text-transform: none ;
+    margin-bottom: 10px;
+}
