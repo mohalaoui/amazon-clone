@@ -5,6 +5,7 @@
   margin-left: 15px;
   padding: 15px;
   background-color: white;
+  border: 1px #ddd solid;
 }
 
 .productCheckout__image {
