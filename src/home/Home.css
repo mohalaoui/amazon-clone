@@ -1,12 +1,21 @@
 .home__image {
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-    width: 100%;
-    z-index: -1;
-    margin-bottom: -20%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -20%;
 }
 
 .home__row {
-    display: flex;
+  display: flex;
+  /* margin-left: 5px; */
+  /* margin-right: 5px; */
+  justify-content: space-between;
+}
+
+@media (max-width: 990px) {
+  .home__row {
+    flex-direction: column;
     margin-left: 5px;
     margin-right: 5px;
+  }
 }

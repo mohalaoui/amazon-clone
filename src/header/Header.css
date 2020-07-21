@@ -64,7 +64,7 @@
 .header__cart {
   display: flex;
   flex-direction: row;
-  padding-right: 5px;
+  /* padding-right: 5px; */
 }
 
 .header__cartLogo {
@@ -86,4 +86,10 @@
   color: white;
   font-size: 14px;
   padding-top: 16px;
+}
+
+@media (max-width: 760px) {
+  .header__navItem {
+    display: none;
+  }
 }

@@ -5,8 +5,7 @@
   align-items: center;
   background-color: white;
   z-index: 1;
-  min-width: 100px;
-  width: 100%;
+  flex: 1;
 }
 
 .product__info {
