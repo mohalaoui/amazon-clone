@@ -1,6 +1,5 @@
 import React from "react";
 import "./Product.css";
-import StarRateSharpIcon from "@material-ui/icons/StarRateSharp";
 import { Button } from "@material-ui/core";
 import { useStateValue } from "../context/StateProvider";
 
