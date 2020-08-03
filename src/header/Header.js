@@ -12,7 +12,7 @@ function Header() {
   return (
     <div className="header">
       {/* logo */}
-      <Link to="/">
+      <Link to="/" style={{ textDecoration: "none" }}>
         <img
           className="header__logo"
           src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
@@ -44,7 +44,7 @@ function Header() {
             <strong>Prime</strong>
           </span>
         </div>
-        <Link to="/cart">
+        <Link to="/cart" style={{ textDecoration: "none" }}>
           {/* basket with number */}
           <div className="header__cart">
             <ShoppingCartOutlinedIcon className="header__cartLogo" />
