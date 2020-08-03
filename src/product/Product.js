@@ -2,25 +2,26 @@ import React from "react";
 import "./Product.css";
 import { Button } from "@material-ui/core";
 import { useStateValue } from "../context/StateProvider";
+import * as actions from "../context/actions";
 
 function Product({ id, title, price, rating, image }) {
   const [{ cart }, dispatch] = useStateValue();
 
   const addToCart = () => {
     dispatch({
-      type: "ADD_TO_CART",
+      type: actions.ADD_TO_CART,
       item: {
-        id: id,
-        title: title,
-        price: price,
-        rating: rating,
-        image: image,
+        id,
+        title,
+        price,
+        rating,
+        image,
       },
     });
   };
 
   return (
-    <div className="product" key={id}>
+    <div className="product">
       <div className="product__info">
         <img className="product__image" src={image} alt="" />
         <p>{title}</p>

@@ -28,6 +28,7 @@ function Cart() {
                 id={item.id}
                 title={item.title}
                 price={item.price}
+                quantity={item.quantity}
                 image={item.image}
               />
             ))}
