@@ -5,6 +5,7 @@ import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../context/StateProvider";
+import { getCartCount } from "../context/reducer";
 
 function Header() {
   const [{ cart }] = useStateValue();
@@ -49,7 +50,7 @@ function Header() {
           <div className="header__cart">
             <ShoppingCartOutlinedIcon className="header__cartLogo" />
             <span className="header__cartCount">
-              <strong>{cart.length}</strong>
+              <strong>{getCartCount(cart)}</strong>
             </span>
             <span className="header__cartText">
               <strong>Panier</strong>

@@ -18,6 +18,9 @@ export const initialState = {
 export const getCartTotal = (cart) =>
   cart?.reduce((amout, item) => amout + item.price * item.quantity, 0);
 
+export const getCartCount = (cart) =>
+  cart?.reduce((amout, item) => amout + item.quantity, 0);
+
 const reducer = (state, action) => {
   switch (action.type) {
     case actions.ADD_TO_CART:
