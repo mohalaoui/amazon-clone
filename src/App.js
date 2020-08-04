@@ -1,9 +1,9 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from './header/Header';
-import Cart from './cart/Cart';
-import Home from './home/Home';
+import Header from "./components/header/Header";
+import Cart from "./pages/cart/Cart";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
